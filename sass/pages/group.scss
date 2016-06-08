@@ -1,0 +1,346 @@
+#quemSomos
+{
+	width:100%;
+	height:auto;
+	padding: 30px 0;
+	background-color: $Pagina-Fundo-Dois;
+}
+
+
+#containerMobile
+{
+
+	width:100%;
+	height:auto;
+	margin: 50px 0 15px;
+	position:relative;
+
+	.ArrowMobileGroup
+	{
+		position:absolute;
+		top:0;
+		width:50px;
+		height:130px;
+
+
+		.ArrowImg
+		{
+			background-image: url($dir-img+'setaMobile.png');
+			height: 50px;
+		    left: 10px;
+		    position: relative;
+		    top: 45px;
+		    width: 30px;
+		    background-size: contain;
+		    cursor:pointer;
+		}
+
+		
+		&.esq
+		{
+			left:0;
+			
+			.ArrowImg
+			{
+				-moz-transform: rotate(180deg);
+				-webkit-transform: rotate(180deg); 
+				transform:rotate(180deg);
+			}
+
+		}
+		&.dir
+		{
+			right:0;
+		}
+
+
+	}
+
+	#contentGroupSwipe
+	{
+		width:100%;
+		height:auto;
+		overflow:hidden;
+
+		#PersonsMobile
+		{
+			height:auto;
+			width:400%;
+			margin: 5px 0;
+			position:relative;
+			left:-100%;
+
+			#ActualPerson, #NextPerson, #AnteriorPerson, #NonePerson
+			{
+				width:percentage((100/4)/100);
+				float:left;
+
+				.groupimage
+				{
+					width:($Tamanho-Foto-xs)+px;
+					height:($Tamanho-Foto-xs)+px;
+					margin:0 auto;
+					background-image: url($dir-img+'sprite-group_15.png');
+					background-position: 1px -125px;
+					background-size: percentage($Numero-Pessoas/1);
+				}
+
+
+				.grouptext
+				{
+					width:100%;
+					height:auto;
+					 padding: 0px 10%;
+
+
+					.tituloMobile
+					{
+						color: $Fonte-Mobile-Group-Titulo;
+				    	font-family: $museo-slab;
+				    	font-size: 17px;
+				    	/* font-weight: 700; */
+				    	height: auto;
+				    	width: 100%;
+				    	pointer-events: none;
+				    	text-align:center;
+				    	margin: 5px 0;
+					}
+
+
+					.textoMobile
+					{
+						font-size: 14px;
+    					height: auto;
+    					width:100%;
+    					margin:5px 0;
+    					pointer-events: none;
+				    	text-align:center;
+					}
+
+
+				}
+
+			}
+		}
+
+	}
+
+	#ContentPontos
+	{
+
+		width:(15*$Numero-Pessoas)+px;
+		margin:0 auto;
+		height:25px;
+		padding:10px 0;
+
+		.dot
+		{
+			height:10px;
+			width:10px;
+			float:left;
+			border-radius:50%;
+			background-color: $Cor-Dots;
+			margin: 0 2.5px;
+			cursor:pointer;
+			pointer-events:all;
+
+			&.ativo
+			{
+				background-color: $Cor-Dots-Ativo;
+				pointer-events:none;
+			}
+
+			&.stand
+			{
+				pointer-events:none;
+
+			}
+		}
+	}
+}
+
+.purpleDot
+{
+	background-image: url($dir-img+'smallDot.png');
+	background-size: auto 100%;
+	height: 2px;
+	position:absolute;
+	transform-origin: center left;
+	-webkit-transform-origin: center left;
+	z-index:2;
+
+	&.escond{display:none;}
+
+	.A{position: absolute; left: 0; top: 0;}
+	.B{position: absolute; right: 0; top: 0;}
+	.C{position: absolute; right: 0; bottom: 0;}
+	.D{position: absolute; left: 0; bottom: 0;}
+}
+
+
+.TextoPessoaContent
+{
+	width:100px;
+	height:100px;
+	position:absolute;
+	display:none;
+	pointer-events: none;
+
+	.A{position: absolute; left: 0; top: 0;}
+	.B{position: absolute; right: 0; top: 0;}
+	.C{position: absolute; right: 0; bottom: 0;}
+	.D{position: absolute; left: 0; bottom: 0;}
+}
+
+.TituloRoxo 
+{
+	color: $Fonte-Mobile-Group-Titulo;
+	font-family: $museo-slab;
+	font-size: 14px;
+	/* font-weight: 700; */
+	height: auto;
+	width: 100%;
+	pointer-events: none;
+}
+
+.TextoPessoal 
+{
+	font-size: 12px;
+	height: auto;
+	width:100%;
+	pointer-events: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+	#containerGrupo
+	{
+		width:675px;
+		height:970px;
+		position:relative;
+		left: -30px;
+		margin:20px auto;
+
+		.Pessoa
+		{
+			width:125px;
+			height:124px;
+			background-image: url($dir-img+'sprite-group_15.png');
+			z-index:4;
+			border-radius:50%;
+			cursor:pointer;
+			position:absolute;
+
+
+			/*&.Felipe		{	background-position: (((125*10)*-1)-1)+px -125px ;	top:558px;	left:532px;	}*/
+			
+			&.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:104px;	left:46px;	&.Moved{ transition: top 1s; top:(104+50)+px;}}
+			&.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:36px;	left:240px;	&.Moved{ transition: top 1s; top:(36+50)+px;}}
+			&.Nilton		{	background-position: (((125*2)*-1)-1)+px -125px ;	top:252px;	left:250px;	&.Moved{ transition: top 1s; top:(252+50)+px;}}
+			&.Carol			{	background-position: (((125*3)*-1)-1)+px -125px ;	top:156px;	left:408px;	&.Moved{ transition: top 1s; top:(156+50)+px;}}
+			&.Pedro			{	background-position: (((125*4)*-1)-1)+px -125px ;	top:447px;	left:240px;	&.Moved{ transition: top 1s; top:(447+50)+px;}}
+			&.Fernando		{	background-position: (((125*5)*-1)-1)+px -125px ;	top:418px;	left:427px;	&.Moved{ transition: top 1s; top:(418+50)+px;}}
+			&.Bruno			{	background-position: (((125*6)*-1)-1)+px -125px ;	top:523px;	left:64px;	&.Moved{ transition: top 1s; top:(523+50)+px;}}
+			&.Diego			{	background-position: (((125*7)*-1)-1)+px -125px ;	top:45px;	left:540px;	&.Moved{ transition: top 1s; top:(45+50)+px;}}
+			&.Rogerio		{	background-position: (((125*8)*-1)-1)+px -125px ;	top:726px;	left:560px;	&.Moved{ transition: top 1s; top:(726+50)+px;}}
+			&.Lucas			{	background-position: (((125*9)*-1)-1)+px -125px ;	top:274px;	left:43px;	&.Moved{ transition: top 1s; top:(274+50)+px;}}
+			&.Fabio			{	background-position: (((125*10)*-1)-1)+px -125px ;	top:617px;	left:306px;	&.Moved{ transition: top 1s; top:(617+50)+px;}}
+			&.Vitor			{	background-position: (((125*11)*-1)-1)+px -125px ;	top:558px;	left:532px;	&.Moved{ transition: top 1s; top:(558+50)+px;}}
+			&.Alessandra	{	background-position: (((125*12)*-1)-1)+px -125px ;	top:737px;	left:68px;	&.Moved{ transition: top 1s; top:(737+50)+px;}}
+			&.Rafael		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:252px;	left:575px;	&.Moved{ transition: top 1s; top:(252+50)+px;}}
+
+			/* &.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 0, 0, "Y")+px;		left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 0, 0, "X")+px;	}
+			&.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 100, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 100, "X")+px;	}
+			&.Nilton		{	background-position: (((125*2)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 200, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 200, "X")+px;	}
+			&.Carol			{	background-position: (((125*3)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 300, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 300, "X")+px;	}
+			&.Pedro			{	background-position: (((125*4)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 400, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 400, "X")+px;	}
+			&.Fernando		{	background-position: (((125*5)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 500, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 500, "X")+px;	}
+			&.Bruno			{	background-position: (((125*6)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 600, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 600, "X")+px;	}
+			&.Diego			{	background-position: (((125*7)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 700, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 700, "X")+px;	}
+			&.Rogerio		{	background-position: (((125*8)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 800, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 800, "X")+px;	}
+			&.Lucas			{	background-position: (((125*9)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 900, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 900, "X")+px;	}
+			&.Fabio			{	background-position: (((125*10)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 1000, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 1000, "X")+px;	}
+			&.Vitor			{	background-position: (((125*11)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 1100, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 1100, "X")+px;	}
+			&.Alessandra	{	background-position: (((125*12)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 1200, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 1200, "X")+px;	}
+			&.Rafael		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 1300, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 350, 1300, "X")+px;	} */
+
+		
+			.A{left: 0; top: 0;}
+			.B{right: 0; top: 0;}
+			.C{right: 0; bottom: 0;}
+			.D{left: 0; bottom: 0;}
+
+		}
+
+	}
+
+	
+	#detectGroupStyle
+	{
+		display:none;
+	}
+
+}
+
+@media (min-width: 992px){
+
+
+	#containerGrupo
+	{
+		width:964px;
+		height:750px;
+		position:relative;
+		margin:0 auto;
+		border:none;
+		left: 0px;
+
+		.Pessoa
+		{
+			width:125px;
+			height:124px;
+			float:left;
+			margin-right:2px;
+			position:absolute; 
+			background-image: url($dir-img+'sprite-group_15.png');
+			z-index:4;
+			border-radius:50%;
+			cursor:pointer;
+
+			/*&.Felipe		{	background-position: (((125*10)*-1)-1)+px -125px ;	top:80px;	left:(766-55)+px;	}*/
+			&.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:116px;	left:(98-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(116+50)+px;}}
+			&.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:270px;	left:(563-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(270+50)+px;}}
+			&.Nilton		{	background-position: (((125*2)*-1)-1)+px -125px ;	top:238px;	left:(336-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(238+50)+px;}}
+			&.Carol			{	background-position: (((125*3)*-1)-1)+px -125px ;	top:433px;	left:(668-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(433+50)+px;}}
+			&.Pedro			{	background-position: (((125*4)*-1)-1)+px -125px ;	top:426px;	left:(465-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(426+50)+px;}}
+			&.Fernando		{	background-position: (((125*5)*-1)-1)+px -125px ;	top:582px;	left:(823-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(582+50)+px;}}
+			&.Bruno			{	background-position: (((125*6)*-1)-1)+px -125px ;	top:609px;	left:(275-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(609+50)+px;}}
+			&.Diego			{	background-position: (((125*7)*-1)-1)+px -125px ;	top:80px;	left:(546-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(80+50)+px;}}
+			&.Rogerio		{	background-position: (((125*8)*-1)-1)+px -125px ;	top:582px;	left:(570-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(582+50)+px;}}
+			&.Lucas			{	background-position: (((125*9)*-1)-1)+px -125px ;	top:299px;	left:(88-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(299+50)+px;}}
+			&.Fabio			{	background-position: (((125*10)*-1)-1)+px -125px ;	top:80px;	left:(766-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(80+50)+px;}}
+			&.Vitor			{	background-position: (((125*11)*-1)-1)+px -125px ;	top:55px;	left:(300-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(55+50)+px;}}
+			&.Alessandra	{	background-position: (((125*12)*-1)-1)+px -125px ;	top:277px;	left:(790-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(277+50)+px;}}
+			&.Rafael		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:410px;	left:(226-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(410+50)+px;}}
+
+
+			
+
+
+
+		}
+
+	}
+
+	.purpleDot
+	{
+		display:block;	
+	}
+
+	#detectGroupStyle
+	{
+		display:block;
+	}
+	
+
+}

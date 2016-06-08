@@ -1,0 +1,146 @@
+#Menu{
+
+		height:Dv(150)+px;
+		width:100%;
+		background-color: $bgColor-Menu;
+		position:fixed;
+		padding-top: 10px;
+		top:0px;
+		z-index: 10;
+		transition: box-shadow 0.2s;
+		-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.34);
+		-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.34);
+		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.34);
+
+		.menuOpcao
+		{
+			width:100%;
+			height:Dv(100)+px;
+			text-align:center;
+			padding: Dv(40)+px 0;
+
+			&.Logo{
+				background-image: url($dir-img+'logoMuranoNovo-01.png');
+				background-position: left center;
+    			background-repeat: no-repeat;
+    			background-size: auto Dv(90)+px;
+    			cursor:pointer;
+			}
+			&.Hamburger{
+				background-image: url($dir-img+'MenuIco.png');
+				background-position: right center;
+    			background-repeat: no-repeat;
+    			background-size: 24px;
+    			cursor:pointer;
+			}
+		}
+
+}
+
+#OpcoesMenu
+{
+	width:100%;
+	height:auto;
+	position:fixed;
+	z-index:9;
+	top:Dv(((80+2)*$num-Opcoes)*-1)+px;
+	background-color: transparent;
+	transition: top 1s;
+	background-color : #EFEFEC;
+	padding-top: 6px;
+
+	.Opcao{
+		width:100%;
+		height:Dv(80)+px;
+		color: $bgColor-Menu-Opcao;
+		font-size:	Dv(30)+px;
+		text-transform: uppercase;
+		padding: Dv(20)+px 0 0 Dv(72)+px ;
+		cursor: pointer;
+	}
+
+	hr{
+		width:90%;
+		margin: 0 auto;
+		background-color : $bgColor-Menu-Opcao-Line;
+		height:2px;
+
+	}
+}
+
+
+@media (min-width: 768px){ 
+
+	#OpcoesMenu
+	{
+		display:none;
+	}
+
+	#Menu{
+
+		height: 75px;
+
+		.menuOpcao
+		{
+			height: 57.333px;
+    		padding: 17.3333px 0;
+
+			&.Logo{
+				background-size: auto 53px;
+			}
+			&.Hamburger{
+				display:none;
+			}
+		}
+
+		#OpcoesSuperior
+		{
+			width:100%;
+			height:Dv(100)+px;
+
+			display: table;
+			position:relative;
+    		text-align: center;
+
+			.Opcao{
+				height:Dv(100)+px;
+				float:right;
+				text-align: center;
+				cursor: pointer;
+    			padding: 17px 1.5% 0;
+    			width: auto;
+
+				span{
+					display: inline;
+					width:percentage(1/$num-Opcoes);
+  					vertical-align: middle;	
+					 height: 43.3333px;
+					text-align: center;	
+					font-size: 13px;
+					text-transform: uppercase;
+					font-size: 11px;
+					font-weight: 400;
+				}
+			}
+
+
+			#bottomHighlight{
+				width:0px;
+				height:2px;
+				background-color: $bgColor-Menu-Highlight;
+				position:absolute;
+				top:0px;
+				left:0px;
+				transition: width 1s, left 1s;
+			}
+		}
+
+	}
+
+}
+
+
+
+@media (min-width: 992px) {
+	
+}

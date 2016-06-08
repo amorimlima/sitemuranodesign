@@ -1,0 +1,98 @@
+
+#Rodape{
+	width:100%;
+	height:auto;
+	padding-top:20px;
+	background-color:$Pagina-Rodape;
+
+	.textoRodape{
+		width: 100%;
+		height:auto;
+		text-align: center;
+		margin: 10px 0 ; 
+	}
+
+
+	.icones
+	{
+		width: 100%;
+		height:auto;
+		text-align: right;
+		font-size: 10px;
+
+		a > span > i{
+			color: rgba(247,247,245,1);
+			transition:color 0.5s;
+		}
+	}
+
+
+	#ContentLocalizacao
+	{
+		width:100%;
+		margin-bottom: 5px;
+    	min-height: 126px;
+		height: auto;
+		padding: 1px 0px;
+		position: relative;
+
+		.InfoLocalizacao{
+
+			font-size: 17px;
+			width:100%;
+			height:auto;
+			color: #78776b;
+			color:#f7f7f5;
+
+		}
+
+
+
+	}
+}
+
+
+#MapGoogle
+{
+	width:100%;
+	height:250px;
+	padding-bottom: 20px;
+}
+
+.RedesSociaisLocalizacao{
+	bottom: 0;
+    height: auto;
+    text-align: right;
+    width: 99%;
+    color: blue;
+}
+
+
+@media (min-width: 768px) {
+
+	#Rodape{
+		padding-top:10px;
+		padding-bottom:10px;
+		
+	}
+}
+
+
+@media (min-width: 992px) {
+	#Rodape{
+
+		.icones
+		{
+
+			a > span > i{
+				color: rgba(247,247,245,0.30);
+				transition:color 0.5s;
+
+				&:hover{
+					color: rgba(247,247,245,1);
+				}
+			}
+		}
+	}
+
+}

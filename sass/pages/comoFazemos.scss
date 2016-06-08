@@ -1,0 +1,212 @@
+#ComoFazemos{
+	width:100%;
+	height:auto;
+	padding: 40px 0 5px;
+	background-color: $Pagina-Fundo-Dois;
+
+	.tituloEsquerda{
+		margin:10px 0 60px;
+	}
+
+	.obj_icone, .obj_iconeG{
+		display: none;
+		bottom:0px;
+		left:0px;
+		position:absolute;
+		width:5px;
+		height:5px;
+		border-radius: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		background-color:$Cor-Laranja;
+	}
+
+	.obj_iconeG{
+		width:8px;
+		height:8px;
+	}
+
+	.subtituloEsquerda{
+		width:75%;
+		margin:0 auto;
+		margin-bottom:60px;
+		text-align: center;
+	}
+
+	.row{
+		position: relative;
+
+		.linha{
+
+			display: none;
+
+			&.A{
+			
+			}
+
+			&.B{
+    			
+			}
+
+			&.C{
+    			
+			}
+
+			&.D{
+    			
+			    
+			}
+
+			&.E{
+    			
+			}
+
+			&.F{
+    			
+			}
+
+
+		}
+
+		.infograficoItem {
+			display: block;
+			text-align: center;
+			outline: none;
+			max-width: 350px;
+			margin: 0px auto 0;
+			white-space: wrap;
+
+			&.noTop{
+			margin-top: 0px;
+			}
+
+			&.noBottom{
+				margin-bottom: 0px;
+			}
+
+			img {
+				border: none;
+				display: block;
+				margin: 0 auto;
+				max-width: 75%;
+				height: 100px;
+			}
+
+			p {
+				height: auto;
+			    margin: 2px auto 0px;
+			    white-space: initial;
+			    width: 80%;
+			    word-wrap: break-word;
+				color:$Fonte-Cor-Infografico;
+				font-size: 16px;
+				line-height: 1.3;
+
+			    &.titulo{
+					text-transform: uppercase;
+			   		margin: 20px auto 0px;
+					font-weight: 400;
+					color:$Fonte-Cor-Infografico;
+				}
+
+			}
+
+			&:last-child{
+				margin-bottom: 70px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+	#ComoFazemos{
+	width:100%;
+	height:auto;
+	
+	.obj_icone, .obj_iconeG{
+		display: block;
+	}
+
+		.subtituloEsquerda{
+			text-align: left;
+			width:50%;
+			margin:0 !important;
+		}
+
+		.row{
+
+			display:block;
+
+
+			.infograficoItem {
+				margin: 70px auto 0;
+			}
+
+			.linha{
+				display:block;
+				position:absolute;
+				width:100px;
+				height:100px;
+				background-image: url($dir-img+'DotsA.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				
+
+				&.A{
+					height: 10px;
+					width: 24%;
+					top:130px;
+					left: calc(50% - 90px);
+				}
+
+				&.B{
+					background-image: url($dir-img+'DotsB.png');
+					height: 100px;
+				    right: 19%;
+				    bottom: 270px;
+				    width: 122px;
+				}
+
+				&.C{
+					background-image: url($dir-img+'DotsC.png');
+					height: 170px;
+				    left: 25%;
+				    top: 50px;
+				    width: 24%;
+				}
+
+				&.D{
+					
+				    top: 50px;
+				    height: 10px;
+					width: 24%;
+					left: calc(50% - 90px);
+				}
+
+				&.E{
+					background-image: url($dir-img+'DotsE.png');
+					height: 130px;
+					left: 75%;
+					top: -30px;
+					width: 8px;
+				}
+
+				&.F{
+					background-image: url($dir-img+'DotsF.png');
+					height: 130px;
+					left: 24%;
+					top: -70px;
+					width: 108px;
+				}
+
+
+			}
+		}
+	}
+}

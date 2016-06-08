@@ -1,0 +1,184 @@
+@font-face{
+font-family:"proxima-nova";
+}
+
+@font-face{
+font-family:"museo-slab";}
+
+@font-face{
+font-family: "brandon-grotesque";}
+
+
+*
+{
+	color:$Fonte-Cor-Padrao;
+}
+
+html, body
+{
+	font-family:$proxima-nova;
+	overflow-x:hidden;
+	font-style: normal;
+	font-weight:300;
+	-webkit-hyphens: none;
+ 	-moz-hyphens: none;
+ 	-ms-hyphens: none;
+ 	hyphens: none;
+}
+
+#wrapper{
+	overflow-x:hidden;
+	width:100%;
+	height:auto;
+	position:relative;
+}
+
+
+/* Limite 1024px para responsive Desktops */
+.ContentMax
+{
+
+	height:auto;
+	width:90%;
+	margin:0 auto;
+	max-width:1024px;
+}
+
+/* Título de todas as páginas */
+
+.paginaTitulo
+{
+	width:100%;
+	height:auto;
+	font-size:20px;
+	text-align:center;
+	padding-top:20px;
+	color: $Titulo-Cor-Laranja;
+}
+
+.pageWhiteTitle
+{
+	width:100%;
+	height:auto;
+	font-size: 30px;
+	color: $Titulo-Cor-Laranja;
+	text-transform: uppercase;
+	text-align:center;
+}
+
+.pageWhiteText
+{
+	width:100%;
+	height:auto;
+	font-size: 16px;
+	color: $Fonte-Azul-Texto;
+}
+
+.pageBlueTitle
+{
+	width:100%;
+	height:auto;
+	font-size: 30px;
+	color: $Fonte-White-Titulo;
+	text-transform: uppercase;
+}
+
+.pageBlueText
+{
+	width:100%;
+	height:auto;
+	font-size: 16px;
+	color: $Fonte-White-Texto;
+}
+
+.nopadding
+{
+	padding: 0px !important;
+}
+
+
+.tituloEsquerda
+{
+	font-size: 22px;
+	color: $Fonte-Cor-Titulo-Esquerda;
+	text-align: center;
+	width:100%;
+	height:auto;
+	text-transform: uppercase;
+	margin: 10px 0;
+	font-family:$museo-slab;
+}
+
+
+/* .Banner2{
+	width:100%;
+	height:300px;
+	background-image : url($dir-img+'foto_teste.png');
+	background-size:cover;
+	background-position:center;
+} */
+
+
+/* Embed video */
+
+#player
+{
+	background-color: black;
+} 
+
+.embed-container 
+{ 
+
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto; 
+
+	iframe, object, embed
+	{
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%; 
+	}
+}  
+
+.embed-container 
+{ 
+	padding-top: 0px !important 
+}
+
+
+@media (min-width: 768px) {
+
+	.paginaTitulo
+	{
+		font-size:45px;
+	}
+
+
+	.tituloEsquerda
+	{
+		text-align: left;
+	}
+
+
+}
+
+@media (min-width: 992px) {
+
+	/* Limite 1024px para responsive Desktops */
+	.ContentMax
+	{
+
+		&.exception
+		{
+			width:99%;
+		}
+	}
+
+}

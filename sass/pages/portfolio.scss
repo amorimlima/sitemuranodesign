@@ -1,0 +1,51 @@
+#ContentPortfolio
+{
+	width:100%;
+	height:auto;
+	padding: 30px 0;
+	background-color: $Pagina-Fundo-Um;
+
+	.itemWrapper{
+
+		width:100%;
+		height:auto;		
+		margin-bottom: 30px;
+
+		.contentItem{
+			width:100%;
+			float:none;
+			height:auto;						
+				
+			img{
+				width:100%;				
+			}
+
+			
+		}
+
+
+		.contentText{
+			width:100%;
+			height:auto;
+			text-transform: uppercase;
+			text-align:center;
+			font-weight: 300;
+			font-size: 16px;
+			margin-top: -10px;
+		}
+
+
+	}
+
+}
+
+@media (min-width: 400px){ 
+	
+	
+}
+
+
+@media (min-width: 768px){ 
+
+
+}
