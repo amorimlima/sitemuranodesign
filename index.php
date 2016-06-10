@@ -10,15 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="stylesheets/styles.css">
 
-    
 
-    
+
+
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/MuranoDesign-Ico.ico">
 
-    <?php  header("Content-Type: text/html;charset=UTF-8"); ini_set('display_errors', '0'); error_reporting(E_ERROR | E_WARNING | E_PARSE); ?> 
+    <?php  header("Content-Type: text/html;charset=UTF-8"); ini_set('display_errors', '0'); error_reporting(E_ERROR | E_WARNING | E_PARSE); ?>
 
   </head>
   <body>
@@ -60,23 +60,23 @@
         <!-- Menu Abaixo do Banner -->
         <?php include_once($local."/menu.php"); ?>
 
-          
+
         <!-- Intro -->
         <?php include_once($local."/intro.php"); ?>
-          
+
         <!-- Como Fazemos -->
         <?php include_once($local."/comoFazemos.php"); ?>
-          
-        
+
+
         <!--  O Que Fazemos -->
         <?php include_once($local."/queFazemos.php"); ?>
-        
+
         <!-- Quem Somos -->
         <?php include_once($local."/quemSomos.php"); ?>
 
         <!-- portfolio -->
         <?php include_once($local."/portfolio.php"); ?>
-          
+
 
         <!-- Clientes  -->
         <?php include_once($local."/clientes.php"); ?>
@@ -85,18 +85,18 @@
         <!-- Carrousel  -->
         <?php include_once($local."/clientesCarrousel.php"); ?>
 
-          
+
         <!-- Fale Conosco -->
         <?php include_once($local."/contato.php"); ?>
 
-          
+
         <!-- Rodapé  -->
         <?php include_once($local."/rodape.php"); ?>
 
 
-      
+
     </div>
-      
+
 
   <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script src="https://use.typekit.net/fug4oxp.js"></script>

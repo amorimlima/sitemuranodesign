@@ -13530,6 +13530,79 @@ html, body {
   font-size: 16px;
   margin-top: -10px;
 }
+/* line 38, ../sass/pages/portfolio.scss */
+#ContentPortfolio .FiltrosPortfolioContainer {
+  margin: 50px 0;
+}
+/* line 42, ../sass/pages/portfolio.scss */
+#ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio {
+  display: inline-block;
+  font-size: 18px;
+  width: auto;
+  text-align: center;
+  font-weight: 500;
+}
+/* line 49, ../sass/pages/portfolio.scss */
+#ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio:nth-child(odd) {
+  cursor: pointer;
+}
+/* line 52, ../sass/pages/portfolio.scss */
+#ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio:nth-child(odd):hover, #ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio:nth-child(odd).FiltroAtivo {
+  color: #E87108;
+}
+/* line 56, ../sass/pages/portfolio.scss */
+#ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio::after {
+  content: "";
+  display: inline-block;
+  visibility: hidden;
+  height: 0;
+  width: 100%;
+}
+/* line 67, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+/* line 72, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  transition: opacity 0.2s ease-in-out;
+}
+/* line 85, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 100px);
+  transform: translate(-50%, -50%);
+}
+/* line 92, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTitulo {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* line 98, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTags {
+  color: #fff;
+  font-size: 15px;
+}
+/* line 105, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer:hover .FiltroImgPortfolio {
+  opacity: 0;
+}
+/* line 110, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12:nth-last-child(0) .ImgPortfolioContainer, #ContentPortfolio .col-xs-12:nth-last-child(1) .ImgPortfolioContainer {
+  margin-bottom: 0;
+}
 
 /* line 1, ../sass/pages/clientesCarrousel.scss */
 #clientes {
