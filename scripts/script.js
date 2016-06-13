@@ -55,10 +55,10 @@ var PageVars = {
 
 	var Pessoas = [
 				{"Nome":"Julia",		"NomeCompleto":"Julia Murano",			"X": [(56-55)+"","14"],			"Y":["41","32"],	"Width":["200","228"],	"Texto":"Javascript e lógica de programação na cabeça. É ela que chamamos quando precisamos de uma nova solução."	},
-				{"Nome":"Dora",			"NomeCompleto":"Dora Murano",			"X": [(463-55)+"","375"],		"Y":["206","15"],	"Width":["150","179"],	"Texto":"Ligada 24/7, entusiasta de novas tecnologias, garimpa oportunidades incríveis."	},
+				{"Nome":"Dora",			"NomeCompleto":"Dora Murano",			"X": [(463-55)+"","375"],		"Y":["206","15"],	"Width":["150","179"],	"Texto":"Ligada 24/7, entusiasta de <br/> novas tecnologias, garimpa <br/> oportunidades incríveis."	},
 				{"Nome":"Nilton",		"NomeCompleto":"Nilton Leme",			"X": [(222-55)+"","185"],		"Y":["271","167"],	"Width":["110","135"],	"Texto":"Nosso cara de TI, que também coloca a mão na massa quando o assunto é negócio."	},
 				{"Nome":"Carol",		"NomeCompleto":"Carol Ferreira",		"X": [(806-55)+"","397"],		"Y":["438","283"],	"Width":["145","162"],	"Texto":"Essa mineirinha é fera em linguagem de programação. Comprometida, faz a diferença em todos os projetos que participa."	},
-				{"Nome":"Pedro",		"NomeCompleto":"Pedro Henrique",		"X": [(360-55)+"","210"],		"Y":["435","375"],	"Width":["100","157"],	"Texto":"O menino do Debugger"	},
+				{"Nome":"Pedro",		"NomeCompleto":"Pedro Henrique",		"X": [(360-55)+"","210"],		"Y":["435","375"],	"Width":["100","157"],	"Texto":"O menino do Debugger, mestre no CookieClicker, ta mt frio to bolado"	},
 				{"Nome":"Fernando",		"NomeCompleto":"Kevyn Miranda",			"X": [(813-55)+"","567"],		"Y":["466","418"],	"Width":["200","138"],	"Texto":"Jovem <i>padawan</i> das artes milenares e ocultas da programação. Poliglota em <i>coding</i>, com fluência em Java, C#, C e ‘imbromeition’ em vb6 e javascript."	},
 				{"Nome":"Bruno",		"NomeCompleto":"Bruno Ahn",				"X": [(428-55)+"","200"],		"Y":["613","571"],	"Width":["125","106"],	"Texto":"Aprende tudo muito rápido e está sempre atento. Designer versátil, gosta de produção audiovisual, diagramação e programação."	},
 				{"Nome":"Diego",		"NomeCompleto":"Diego Garcia",			"X": [(479-55)+"","364"],		"Y":["10","15"],	"Width":["180","189"],	"Texto":"Imaginativo e apaixonado, gosta de presenciar pequenos milagres que fazem um código funcionar."	},
@@ -112,7 +112,7 @@ $( document ).ready(function() {
 
 function ActScroll(){
 
-   	showDotsGroup();
+   	//showDotsGroup();
     
 	sombraMenuSuperior();
 	
@@ -280,24 +280,24 @@ $("#HamburgerIcon").click(function(){
 
 			for(var a=0; a< $('.purpleDot').length; a++)
 			{
-				/*if($($('.purpleDot').get(a)).hasClass( "Linha"+PageVars.classSelected[1] ))
+				if($($('.purpleDot').get(a)).hasClass( "Linha"+PageVars.classSelected[1] ))
 				{
 					$($('.purpleDot').get(a)).hide();
-				}*/
+				}
 
 				//console.log($('.TextoPessoaContent.Box'+PageVars.classSelected[1]), $($('.purpleDot').get(a)));
 				//console.log(VerificaColisao($('.TextoPessoaContent.Box'+PageVars.classSelected[1]), $($('.purpleDot').get(a))));
 
-				if(VerificaColisao($('.TextoPessoaContent.Box'+PageVars.classSelected[1]+''), $($('.purpleDot').get(a)))){
+				//if(VerificaColisao($('.TextoPessoaContent.Box'+PageVars.classSelected[1]+''), $($('.purpleDot').get(a)))){
 				//if(distanciaEntre($('.TextoPessoaContent.Box'+PageVars.classSelected[1]), $($('.purpleDot').get(a))) < 100){
 						
 
-						$($('.purpleDot').get(a)).addClass("escond");
+				/*		$($('.purpleDot').get(a)).addClass("escond");
 					
 				} else {
 						$($('.purpleDot').get(a)).removeClass("escond");
 
-				}
+				}*/
 
 					
 			}
@@ -313,7 +313,7 @@ $("#HamburgerIcon").click(function(){
 
 						if(distanciaEntre($("."+p1[1]),$('.Box'+PageVars.classSelected[1])) < ($("."+p1[1]).height() + $('.Box'+PageVars.classSelected[1]).height()) && 
 							$("."+p1[1]).position().top > $('.Box'+PageVars.classSelected[1]).position().top){
-							$("."+p1[1]).addClass("Moved");
+							//$("."+p1[1]).addClass("Moved");
 						}
 					//}
 
@@ -404,8 +404,8 @@ $("#HamburgerIcon").click(function(){
 		{
 			$('.purpleDot').detach();
 		}
-		//($('#detectGroupStyle').is(':visible') ? (LinesHD()):(LinesTab()));
-		NearPerson();
+		($('#detectGroupStyle').is(':visible') ? (LinesHD()):(LinesTab()));
+		//NearPerson();
 
 
 		if(PageVars.classSelected != undefined)
@@ -674,6 +674,122 @@ $("#HamburgerIcon").click(function(){
 
      setDots();
 
+
+
+	function LinesHD()
+	{
+		createLine('Julia','Vitor');
+		createLine('Julia','Nilton');
+		createLine('Julia','Lucas', "Julia");
+
+		createLine('Vitor','Diego');
+		createLine('Vitor','Nilton', "Vitor");
+
+		createLine('Diego','Nilton', 'Vitor');
+		createLine('Diego','Dora', 'Diego');
+		//createLine('Diego','Felipe');
+
+		//createLine('Felipe','Dora');
+		//createLine('Felipe','Alessandra','Felipe');
+
+		createLine('Lucas','Rafael');
+		createLine('Lucas','Bruno', "Lucas");
+		createLine('Lucas','Nilton');
+		//createLine('Lucas','Fabio', 'Lucas Rafael Fabio');
+
+		createLine('Nilton','Rafael', "Nilton");
+		createLine('Nilton','Pedro', "Nilton");
+		createLine('Nilton','Dora');
+
+		createLine('Dora','Pedro', "Dora");
+		createLine('Dora','Carol', "Dora");
+		createLine('Dora','Alessandra');
+
+		createLine('Alessandra','Carol', "Alessandra");
+		createLine('Alessandra','Fernando', 'Alessandra');
+
+		//createLine('Rafael','Fabio');
+		createLine('Rafael','Pedro');
+		createLine('Rafael','Bruno');
+		createLine('Rafael','Rogerio', "Rafael");
+
+		createLine('Pedro','Rogerio','Pedro');
+		createLine('Pedro','Carol');
+
+		createLine('Carol','Rogerio','Pedro');
+		createLine('Carol','Fernando', "Carol");
+
+		createLine('Fabio','Diego');
+		createLine('Fabio','Dora', "Diego");
+		createLine('Fabio','Alessandra', "Fabio");
+
+		createLine('Bruno','Rogerio');
+
+		createLine('Rogerio','Fernando');
+
+	}
+
+	//No Tablet, Quem se Liga com quem (InicioLinha, FimLinha, [Linha deve sumir para aparecer o texto ao clica em quem])
+	function LinesTab()
+	{
+
+		createLine('Julia','Dora');
+		createLine('Julia','Nilton', "Julia");
+		createLine('Julia','Lucas', "Julia");
+
+		createLine('Dora','Diego');
+		createLine('Dora','Carol');
+		createLine('Dora','Nilton', "Dora");
+
+		createLine('Diego','Rafael', "Diego");
+		createLine('Diego','Carol');
+		
+		createLine('Lucas','Nilton');
+		createLine('Lucas','Pedro');
+		createLine('Lucas','Bruno', "Lucas");
+
+		//createLine('Nilton','Rafael', "Carol Rafael");
+		createLine('Nilton','Carol');
+		createLine('Nilton','Pedro', "Nilton");
+		createLine('Nilton','Fernando', "Nilton");
+
+		createLine('Carol','Rafael');
+		createLine('Carol','Fernando', "Carol");
+
+		createLine('Rafael','Fernando', "Rafael");
+		createLine('Rafael','Vitor', "Fernando Rafael");
+
+		createLine('Bruno','Pedro');
+		createLine('Bruno','Fabio');
+		createLine('Bruno','Alessandra' , "Bruno");
+
+		createLine('Pedro','Fernando');
+		createLine('Pedro','Fabio', "Pedro");
+
+
+
+		createLine('Fernando','Fabio', "Fernando Pedro");
+		createLine('Fernando','Vitor', "Fernando");
+
+		//createLine('Pedro','Felipe', "Felipe");
+		//createLine('Pedro','Fabio');
+
+		//createLine('Kevyn','Felipe');
+
+		createLine('Fabio','Alessandra');
+		////createLine('Fabio','Felipe', "Felipe");
+		createLine('Fabio','Vitor');
+		//createLine('Fabio','Rogerio');
+
+		//createLine('Felipe','Rogerio');
+
+		//createLine('Alessandra','Vitor');
+		createLine('Alessandra','Rogerio');
+
+		createLine('Fabio','Rogerio', "Fabio");
+
+		createLine('Vitor','Rogerio', "Vitor");
+	}
 
 
 
