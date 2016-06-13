@@ -6,7 +6,7 @@ gulp.task('default', ['browser-sync']);
 // Static server
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "localhost/MuranoDesign"
+        proxy: "localhost/sitemuranodesign"
     });
 
     gulp.watch("**/*.php").on('change', browserSync.reload);
