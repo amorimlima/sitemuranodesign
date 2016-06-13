@@ -226,7 +226,7 @@
 		{
 			width:125px;
 			height:124px;
-			background-image: url($dir-img+'sprite-group_15.png');
+			background-image: url($dir-img+'sprite-group_16_1.png');
 			z-index:4;
 			border-radius:50%;
 			cursor:pointer;
@@ -235,20 +235,20 @@
 
 			/*&.Felipe		{	background-position: (((125*10)*-1)-1)+px -125px ;	top:558px;	left:532px;	}*/
 			
-			&.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:104px;	left:46px;	&.Moved{ transition: top 1s; top:(104+50)+px;}}
-			&.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:36px;	left:240px;	&.Moved{ transition: top 1s; top:(36+50)+px;}}
-			&.Nilton		{	background-position: (((125*2)*-1)-1)+px -125px ;	top:252px;	left:250px;	&.Moved{ transition: top 1s; top:(252+50)+px;}}
-			&.Carol			{	background-position: (((125*3)*-1)-1)+px -125px ;	top:156px;	left:408px;	&.Moved{ transition: top 1s; top:(156+50)+px;}}
-			&.Pedro			{	background-position: (((125*4)*-1)-1)+px -125px ;	top:447px;	left:240px;	&.Moved{ transition: top 1s; top:(447+50)+px;}}
-			&.Fernando		{	background-position: (((125*5)*-1)-1)+px -125px ;	top:418px;	left:427px;	&.Moved{ transition: top 1s; top:(418+50)+px;}}
-			&.Bruno			{	background-position: (((125*6)*-1)-1)+px -125px ;	top:523px;	left:64px;	&.Moved{ transition: top 1s; top:(523+50)+px;}}
-			&.Diego			{	background-position: (((125*7)*-1)-1)+px -125px ;	top:45px;	left:540px;	&.Moved{ transition: top 1s; top:(45+50)+px;}}
-			&.Rogerio		{	background-position: (((125*8)*-1)-1)+px -125px ;	top:726px;	left:560px;	&.Moved{ transition: top 1s; top:(726+50)+px;}}
-			&.Lucas			{	background-position: (((125*9)*-1)-1)+px -125px ;	top:274px;	left:43px;	&.Moved{ transition: top 1s; top:(274+50)+px;}}
-			&.Fabio			{	background-position: (((125*10)*-1)-1)+px -125px ;	top:617px;	left:306px;	&.Moved{ transition: top 1s; top:(617+50)+px;}}
-			&.Vitor			{	background-position: (((125*11)*-1)-1)+px -125px ;	top:558px;	left:532px;	&.Moved{ transition: top 1s; top:(558+50)+px;}}
-			&.Alessandra	{	background-position: (((125*12)*-1)-1)+px -125px ;	top:737px;	left:68px;	&.Moved{ transition: top 1s; top:(737+50)+px;}}
-			&.Rafael		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:252px;	left:575px;	&.Moved{ transition: top 1s; top:(252+50)+px;}}
+			&.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:104px;	left:46px;	&.Moved{  top:(104+50)+px;}}
+			&.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:36px;	left:190px;	&.Moved{  top:(36+50)+px;}}
+			&.Nilton		{	background-position: (((125*2)*-1)-1)+px -125px ;	top:252px;	left:220px;	&.Moved{  top:(252+50)+px;}}
+			&.Carol			{	background-position: (((125*3)*-1)-1)+px -125px ;	top:156px;	left:358px;	&.Moved{  top:(156+50)+px;}}
+			&.Pedro			{	background-position: (((125*4)*-1)-1)+px -125px ;	top:447px;	left:240px;	&.Moved{  top:(447+50)+px;}}
+			&.Fernando		{	background-position: (((125*5)*-1)-1)+px -125px ;	top:418px;	left:427px;	&.Moved{  top:(418+50)+px;}}
+			&.Bruno			{	background-position: (((125*6)*-1)-1)+px -125px ;	top:523px;	left:64px;	&.Moved{  top:(523+50)+px;}}
+			&.Diego			{	background-position: (((125*7)*-1)-1)+px -125px ;	top:45px;	left:540px;	&.Moved{  top:(45+50)+px;}}
+			&.Rogerio		{	background-position: (((125*8)*-1)-1)+px -125px ;	top:806px;	left:390px;	&.Moved{  top:(726+50)+px;}}
+			&.Lucas			{	background-position: (((125*9)*-1)-1)+px -125px ;	top:314px;	left:43px;	&.Moved{  top:(274+50)+px;}}
+			&.Fabio			{	background-position: (((125*10)*-1)-1)+px -125px ;	top:627px;	left:306px;	&.Moved{  top:(617+50)+px;}}
+			&.Vitor			{	background-position: (((125*11)*-1)-1)+px -125px ;	top:638px;	left:522px;	&.Moved{  top:(558+50)+px;}}
+			&.Alessandra	{	background-position: (((125*12)*-1)-1)+px -125px ;	top:737px;	left:68px;	&.Moved{  top:(737+50)+px;}}
+			&.Rafael		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:252px;	left:565px;	&.Moved{  top:(252+50)+px;}}
 
 			/* &.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 0, 0, "Y")+px;		left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 0, 0, "X")+px;	}
 			&.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 100, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 100, "X")+px;	}
@@ -289,7 +289,7 @@
 	#containerGrupo
 	{
 		width:964px;
-		height:750px;
+		height:950px;
 		position:relative;
 		margin:0 auto;
 		border:none;
@@ -308,20 +308,20 @@
 			cursor:pointer;
 
 			/*&.Felipe		{	background-position: (((125*10)*-1)-1)+px -125px ;	top:80px;	left:(766-55)+px;	}*/
-			&.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:116px;	left:(98-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(116+50)+px;}}
-			&.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:270px;	left:(563-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(270+50)+px;}}
-			&.Nilton		{	background-position: (((125*2)*-1)-1)+px -125px ;	top:238px;	left:(336-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(238+50)+px;}}
-			&.Carol			{	background-position: (((125*3)*-1)-1)+px -125px ;	top:433px;	left:(668-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(433+50)+px;}}
-			&.Pedro			{	background-position: (((125*4)*-1)-1)+px -125px ;	top:426px;	left:(465-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(426+50)+px;}}
-			&.Fernando		{	background-position: (((125*5)*-1)-1)+px -125px ;	top:582px;	left:(823-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(582+50)+px;}}
-			&.Bruno			{	background-position: (((125*6)*-1)-1)+px -125px ;	top:609px;	left:(275-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(609+50)+px;}}
-			&.Diego			{	background-position: (((125*7)*-1)-1)+px -125px ;	top:80px;	left:(546-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(80+50)+px;}}
-			&.Rogerio		{	background-position: (((125*8)*-1)-1)+px -125px ;	top:582px;	left:(570-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(582+50)+px;}}
-			&.Lucas			{	background-position: (((125*9)*-1)-1)+px -125px ;	top:299px;	left:(88-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(299+50)+px;}}
-			&.Fabio			{	background-position: (((125*10)*-1)-1)+px -125px ;	top:80px;	left:(766-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(80+50)+px;}}
-			&.Vitor			{	background-position: (((125*11)*-1)-1)+px -125px ;	top:55px;	left:(300-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(55+50)+px;}}
-			&.Alessandra	{	background-position: (((125*12)*-1)-1)+px -125px ;	top:277px;	left:(790-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(277+50)+px;}}
-			&.Rafael		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:410px;	left:(226-55)+px;	 transition: ease-in-out top 1s; &.Moved{ top:(410+50)+px;}}
+			&.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:116px;	left:(98-55)+px;	 &.Moved{ top:(116+50)+px;}}
+			&.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:280px;	left:(563-55)+px;	 &.Moved{ top:(270+50)+px;}}
+			&.Nilton		{	background-position: (((125*2)*-1)-1)+px -125px ;	top:278px;	left:(336-55)+px;	 &.Moved{ top:(238+50)+px;}}
+			&.Carol			{	background-position: (((125*3)*-1)-1)+px -125px ;	top:476px;	left:(668-55)+px;	 &.Moved{ top:(433+50)+px;}}
+			&.Pedro			{	background-position: (((125*4)*-1)-1)+px -125px ;	top:476px;	left:(465-55)+px;	 &.Moved{ top:(426+50)+px;}}
+			&.Fernando		{	background-position: (((125*5)*-1)-1)+px -125px ;	top:662px;	left:(788)+px;	 	 &.Moved{ top:(582+50)+px;}}
+			&.Bruno			{	background-position: (((125*6)*-1)-1)+px -125px ;	top:609px;	left:(60)+px;	 	 &.Moved{ top:(609+50)+px;}}
+			&.Diego			{	background-position: (((125*7)*-1)-1)+px -125px ;	top:80px;	left:(546-55)+px;	 &.Moved{ top:(80+50)+px;}}
+			&.Rogerio		{	background-position: (((125*8)*-1)-1)+px -125px ;	top:672px;	left:(405)+px;	 	 &.Moved{ top:(582+50)+px;}}
+			&.Lucas			{	background-position: (((125*9)*-1)-1)+px -125px ;	top:339px;	left:(88-55)+px;	 &.Moved{ top:(299+50)+px;}}
+			&.Fabio			{	background-position: (((125*10)*-1)-1)+px -125px ;	top:80px;	left:(766-55)+px;	 &.Moved{ top:(80+50)+px;}}
+			&.Vitor			{	background-position: (((125*11)*-1)-1)+px -125px ;	top:55px;	left:(300-55)+px;	 &.Moved{ top:(55+50)+px;}}
+			&.Alessandra	{	background-position: (((125*12)*-1)-1)+px -125px ;	top:277px;	left:(790-55)+px;	 &.Moved{ top:(277+50)+px;}}
+			&.Rafael		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:470px;	left:(211)+px;	 	 &.Moved{ top:(410+50)+px;}}
 
 
 			
