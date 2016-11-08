@@ -1,0 +1,57 @@
+{
+	"HCB" :{
+		"ordem" : [
+			"banner", 
+			"logo", 
+			"texto", 
+			"texto", 
+			"imagem",
+			"titulo", 
+			"texto", 
+			"imagem",
+			"imagem",
+			"titulo", 
+			"slide",
+			"texto", 
+			"texto"
+			],
+		"banner":["criancasVoadoras.png","cidadeCapa.png"],
+		"logo":"logo_HCB.png",
+		"titulos" :["Plataforma","Atividades"],
+		"titulosCinzas" :["Plataforma educacional crianças como parceiras"],
+		"textos" : ["O projeto Crianças como Parceiras, idealizado pelo Hospital do Câncer de Barretos, tem como objetivo ensinar crianças os temas ligados à saúde como Atividade Física, Saúde Bucal e Proteção Solar. ",
+					"A solução encontrada para a implementação digital do projeto foi produzir uma plataforma com atividades gamificadas.",
+					"A Plataforma Educacional (LMS) possui sistemas de acompanhamento por meio de resultados obtidos ao realizar as atividades on-line. Parâmetros como número de acertos, tempo de realização e número de acessos são facilmente observados em relatórios gerados automaticamente.<br/ >Além disso possui meios de comunicação entre os usuários e compartilhamento de conteúdo adicional às atividades .",
+					"Os exercícios funcionam como fases de um jogo dentro de cada tema que, ao finalizar, o estudante ganha uma medalha referente as atividades. As atividades são caças-palavras, quebra-cabeças, labirintos, ligue os pontos, etc., todos ilustradas por Fernando Siniscalchi.",
+					"A aplicação do projeto se estende a alunos de rede pública e particular de 1º a 5º anos."
+				],
+		"slides" :[
+			{
+				"imagem":"cruzadinha.gif",
+				"descricao":"Atividade de cruzadinha sobre exercícios físicos"
+			},
+			{
+				"imagem":"escova.gif",
+				"descricao":"Atividade de escovação dos dentes"
+			},
+			{
+				"imagem":"colorir.gif",
+				"descricao":"Atividade de colorir, sobre exercícios físicos"
+			},
+			{
+				"imagem":"ligar_pontos2.gif",
+				"descricao":"Atividade de ligar os pontos, sobre proteção solar"
+			},
+			{
+				"imagem":"conta.gif",
+				"descricao":"Atividade de matemática sobre exercícios físicos"
+			},
+			{
+				"imagem":"slide_praia.gif",
+				"descricao":"Atividade sobre exposição aos raios solares"
+			}
+
+		],
+		"imagens" : ["inicio_aluno.JPG","abertura_capitulo_1_aluno.JPG","atividade_capitulo_1_aluno.JPG"]
+	}
+}
