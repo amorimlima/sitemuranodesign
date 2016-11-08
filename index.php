@@ -64,6 +64,9 @@
         <!-- Intro -->
         <?php include_once($local."/intro.php"); ?>
 
+        <!-- portfolio -->
+        <?php include_once($local."/portfolio.php"); ?>
+
         <!-- Como Fazemos -->
         <?php include_once($local."/comoFazemos.php"); ?>
 
@@ -73,10 +76,6 @@
 
         <!-- Quem Somos -->
         <?php include_once($local."/quemSomos.php"); ?>
-
-        <!-- portfolio -->
-        <?php include_once($local."/portfolio.php"); ?>
-
 
         <!-- Clientes  -->
         <?php include_once($local."/clientes.php"); ?>
