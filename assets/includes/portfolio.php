@@ -25,8 +25,9 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-md-6">
+        <a href="portfolio_amorim/index.php">
         <div class="ImgPortfolioContainer">
-          <img src="images/portfolio/amorim.png" height="auto" width="100%" alt="" class="ImgPortfolio">
+          <img src="images/portfolio/amorim.png" height="auto" width="100%" alt="Portfólio Amorim Lima" class="ImgPortfolio">
           <div class="FiltroImgPortfolio text-center">
             <div class="FiltroImgInfo">
               <p class="FiltroImgTitulo text-uppercase">Plataforma educacional amorim lima</p>
@@ -35,9 +36,11 @@
             </div>
           </div>
         </div>
+        </a>
       </div>
       <div class="col-xs-12 col-md-6">
-        <div class="ImgPortfolioContainer">
+        <a href="portfolio_hcb/index.php">
+          <div class="ImgPortfolioContainer">
           <img src="images/portfolio/criancas.png" height="auto" width="100%" alt="" class="ImgPortfolio">
           <div class="FiltroImgPortfolio text-center">
             <div class="FiltroImgInfo">
@@ -47,6 +50,7 @@
             </div>
           </div>
         </div>
+        </a>
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="ImgPortfolioContainer">

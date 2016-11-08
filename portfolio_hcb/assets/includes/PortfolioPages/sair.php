@@ -1,1 +1,1 @@
-<div class="col-xs-push-1 col-xs-10 btnSair"><div class="conteudo"> < Voltar <span class="hidden-xs">para a página Inicial</span></div></div>
+<div class="col-xs-push-1 col-xs-10 btnSair"><div class="conteudo"> < Voltar <span class="col-xs-12">para a página Inicial</span></div></div>
