@@ -53,16 +53,11 @@
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-        <!-- Banner : Arte -->
-        <?php include_once($local."/header.php"); ?>
-
-
         <!-- Menu Abaixo do Banner -->
         <?php include_once($local."/menu.php"); ?>
 
-
         <!-- Intro -->
-        <?php include_once($local."/intro.php"); ?>
+        <?php include_once($local."/video.php"); ?>
 
         <!-- Como Fazemos -->
         <?php include_once($local."/comoFazemos.php"); ?>
