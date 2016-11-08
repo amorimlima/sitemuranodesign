@@ -230,7 +230,6 @@ $("#HamburgerIcon").click(function(){
 
 
 
-
 //---------------------------------------------------------------------------
 // 																		   
 // Função de Inicialização do grupo, para Setar todas as pessoas e valores 
