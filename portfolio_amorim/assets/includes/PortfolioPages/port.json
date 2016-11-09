@@ -1,33 +1,27 @@
 {
-	"HCB" :{
+	"Amorim" :{
 		"ordem" : [
 			"banner", 
 			"logo", 
 			"texto", 
-			"texto", 
-			"imagem",
+			"video",
 			"titulo", 
 			"texto", 
 			"imagem",
-			"imagem",
-			"titulo", 
-			"slide",
-			"texto", 
-			"texto"
+			"texto",
+			"imagem" 
 			],
-		"banner":["criancasVoadoras.png","cidadeCapa.png"],
+		"banner":["capa_amorim.png","fundo_amorim.png"],
 		"logo":"logo_amorim.png",
-		"titulos" :["Plataforma","Atividades"],
+		"titulos" :["Plataforma"],
 		"titulosCinzas" :["Plataforma educacional crianças como parceiras"],
-		"textos" : ["Criada sob medida para atender às demandas do projeto  pedagógico inovador da EMEF Desembargador Amorim Lima a plataforma educacional apoia a gestão e organização do processo de aprendizagem e a interação entre professores, pais e alunos. ",
-					"&nbsp;",
+		"textos" : ["Criada sob medida para atender às demandas do projeto pedagógico inovador da EMEF Desembargador Amorim Lima, a plataforma educacional apoia a gestão e organização do processo de aprendizagem e a interação entre professores, pais e alunos. ",
 					"A Plataforma Educacional Amorim Lima foi financiada pela Fundação Telefônica Vivo e o Instituto Natura por meio do projeto Escolas que Inovam, cujo objetivo é apoiar o uso de tecnologia em escolas de São Paulo que possuem projetos pedagógicos inovadores. No entanto, o conselho pedagógico da escola, após analisar os modelos de plataformas existentes, concluiu que nenhuma delas atendia por completo às demandas das práticas inovadoras da instituição e por isso era preciso criar algo a partir do zero. Assim, a Murano Design foi convidada a desenvolver uma plataforma totalmente customizada, que respondesse às necessidades específicas do projeto pedagógico do Amorim Lima. Projeto esse inspirado na experiência da Escola da Ponte em Portugal, onde o ensino é personalizado e os alunos têm autonomia para conduzir seu aprendizado.",
-					"A solução foi criar uma plataforma gamificada, em que é possível alunos, de 6 a 10 anos, de escolas de Ensino Fundamental, aprender por meio de atividades didáticas e interativas on line. São quebra-cabeças, caça-palavras, jogo dos 7 erros, pintura, entre outros exercícios que abordam diferentes assuntos, como Alimentação Saudável, Atividade Física, Saúde Bucal, Proteção Solar, Bebidas Alcoólicas, Exames Preventivos.",
-					"&nbsp;"
+					"A solução foi criar uma plataforma gamificada, em que é possível que alunos de 6 a 10 anos de escolas de Ensino Fundamental aprendam por meio de atividades didáticas e interativas online. São quebra-cabeças, caça-palavras, jogo dos 7 erros, pinturas, entre outros exercícios que abordam diferentes assuntos, como Alimentação Saudável, Atividade Física, Saúde Bucal, Proteção Solar, e Exames Preventivos.",
 				],
 		"slides" :[
 			{
-				"imagem":"cruzadinha.gif",
+				"imagem":"gif1.gif",
 				"descricao":"Atividade de cruzadinha sobre exercícios físicos"
 			},
 			{
@@ -52,6 +46,7 @@
 			}
 
 		],
-		"imagens" : ["print1.png","print2.png","atividade_capitulo_1_aluno.JPG"]
+		"imagens" : ["print2.png","print1.png"],
+		"video" : ["amorim.mp4"]
 	}
 }

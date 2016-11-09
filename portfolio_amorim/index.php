@@ -173,6 +173,9 @@
         case "imagem":
           html+= '<?php include_once("assets/includes/PortfolioPages/imagem.php"); ?>';
         break;
+        case "video":
+          html+= '<?php include_once("assets/includes/PortfolioPages/video.php"); ?>';
+        break;
         case "Sair":
           html+= '<?php include_once("assets/includes/PortfolioPages/sair.php"); ?>';
         break;
@@ -215,6 +218,9 @@
       if(a < db.textos.length)
         $($("#floatPortfolio .texto .conteudo").get(a)).html(db.textos[a]);
       
+      if(a < db.video.length)
+        $($("#floatPortfolio .video .conteudo").get(a)).find("video").attr("src", "images/Portfolio/"+db.video[a]).attr("poster, images/Portfolio/forum.png");
+
       if(a < db.imagens.length)
         $($("#floatPortfolio .imagem .conteudo").get(a)).find("img").attr("src", "images/Portfolio/"+db.imagens[a]);
       
@@ -273,7 +279,7 @@
 
 
 
-  CarregaPortifolio("HCB");
+  CarregaPortifolio("Amorim");
 
 </script>
 
