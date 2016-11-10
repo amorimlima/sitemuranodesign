@@ -13746,12 +13746,72 @@ a:hover{
   margin-bottom: 0;
 }
 
-/* line 1, ../sass/pages/clientesCarrousel.scss */
-#clientes {
+.modalVideo {
+  position: absolute;
+  padding-bottom: 75%;
+  top: 900px;
+  background-color: transparent;
+  z-index: 9;
   width: 100%;
-  height: auto;
-  padding: 30px 0;
-  background-color: #ffffff;
+}
+
+.modalVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 12%;
+  background-color: transparent;
+  z-index: 10;
+  height: 66%;
+  width: 76%;
+}
+
+.modalVideoBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  z-index: 9;
+}
+
+.modalVideoClose {
+  position: absolute;
+  top: 900px;
+  left: 88%;
+  background-color: transparent;
+  z-index: 9;
+  width: 3%;
+  max-width: 50px;
+  min-width: 20px;
+  height: 5%;
+  max-height: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+.modalVideoClose {
+  font-size: 20px;
+}
+}
+
+@media (min-width: 1024px) {
+  .modalVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  background-color: transparent;
+  z-index: 10;
+  height: 62%;
+  width: 70%;
+}
+
+.modalVideoClose {
+  left: 85%;
+  font-size: 20px;
+}
 }
 
 /* line 8, ../sass/pages/clientesCarrousel.scss */
