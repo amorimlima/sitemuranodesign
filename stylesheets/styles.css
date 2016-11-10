@@ -12287,6 +12287,22 @@ html, body {
   content: "";
 }
 
+a:link {
+    background-color: transparent;
+}
+
+a:hover {
+    background-color: transparent;
+}
+
+a:visited {
+    background-color: transparent;
+}
+
+a:active {
+    background-color: transparent;
+}
+
 /* line 1, ../sass/pages/header.scss */
 #Header {
   width: 100%;
@@ -12382,7 +12398,7 @@ html, body {
   z-index: 9;
   top: -177.66653px;
   background-color: transparent;
-  transition: top 1s;
+  transition: top 0.5s;
   background-color: #EFEFEC;
   padding-top: 6px;
 }
@@ -12773,9 +12789,6 @@ a {
   padding: .5rem;
   transition: .6s background; 
 }
-a:hover{
-  background:rgba(0,0,0,0.9);
-}
 
 
 
@@ -13049,7 +13062,7 @@ a:hover{
   width: 100%;
   height: auto;
   padding: 30px 0;
-  background-color: #ffffff;
+  background-color: #f9f8f6;;
 }
 
 /* line 10, ../sass/pages/group.scss */
@@ -13643,14 +13656,25 @@ a:hover{
 #ContentPortfolio {
   width: 100%;
   height: auto;
-  padding: 30px 0;
+  padding: 70px 0;
   background-color: #f9f8f6;
 }
 /* line 8, ../sass/pages/portfolio.scss */
 #ContentPortfolio .itemWrapper {
   width: 100%;
   height: auto;
+  margin-bottom: 0;
+  padding: auto;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+#ContentPortfolio .itemWrapper {
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
+  padding: 0;
+}
 }
 /* line 14, ../sass/pages/portfolio.scss */
 #ContentPortfolio .itemWrapper .contentItem {
@@ -13684,14 +13708,11 @@ a:hover{
   text-align: center;
   font-weight: 500;
 }
-/* line 49, ../sass/pages/portfolio.scss */
-#ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio:nth-child(odd) {
-  cursor: pointer;
-}
+
 /* line 52, ../sass/pages/portfolio.scss */
-#ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio:nth-child(odd):hover, #ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio:nth-child(odd).FiltroAtivo {
+/*#ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio:nth-child(odd):hover, #ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio .FiltroPortfolio:nth-child(odd).FiltroAtivo {
   color: #E87108;
-}
+}*/
 /* line 56, ../sass/pages/portfolio.scss */
 #ContentPortfolio .FiltrosPortfolioContainer .FiltrosPortfolio::after {
   content: "";
@@ -13703,15 +13724,13 @@ a:hover{
 /* line 67, ../sass/pages/portfolio.scss */
 #ContentPortfolio .col-xs-12 .ImgPortfolioContainer {
   position: relative;
-  cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 /* line 72, ../sass/pages/portfolio.scss */
 #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 50px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
@@ -13729,6 +13748,19 @@ a:hover{
 /* line 92, ../sass/pages/portfolio.scss */
 #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTitulo {
   color: #fff;
+  font-size: 4vw;
+  font-weight: bold;
+}
+/* line 98, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTags {
+  color: #fff;
+  font-size: 2.5vw;
+}
+
+@media (min-width: 524px) {
+  /* line 92, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTitulo {
+  color: #fff;
   font-size: 25px;
   font-weight: bold;
 }
@@ -13736,6 +13768,7 @@ a:hover{
 #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTags {
   color: #fff;
   font-size: 15px;
+}
 }
 /* line 105, ../sass/pages/portfolio.scss */
 #ContentPortfolio .col-xs-12 .ImgPortfolioContainer:hover .FiltroImgPortfolio {
@@ -13746,7 +13779,13 @@ a:hover{
   margin-bottom: 0;
 }
 
-.modalVideo {
+.rowmargintop {
+  margin-top: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/*.modalVideo {
   position: absolute;
   padding-bottom: 75%;
   top: 900px;
@@ -13812,13 +13851,17 @@ a:hover{
   left: 85%;
   font-size: 20px;
 }
+}*/
+
+#clientes {
+  background-color: #fff;
 }
 
 /* line 8, ../sass/pages/clientesCarrousel.scss */
 #clientesCarrousel {
-  width: 99%;
+  width: 100%;
   height: auto;
-  padding: 0 0 30px 0;
+  padding: 0 0 100px 0;
   background-color: #ffffff;
 }
 /* line 15, ../sass/pages/clientesCarrousel.scss */
