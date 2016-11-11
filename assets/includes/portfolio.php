@@ -3,27 +3,29 @@
 	<div class="ContentMax">
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="tituloEsquerda text-uppercase">portfolio</h2>
+        <div class="tituloEsquerda text-uppercase">portfolio</div>
       </div>
-    </div>
-    <div class="row">
+    </div><br />
+<!--     <div class="row">
       <div class="col-xs-12">
         <div class="FiltrosPortfolioContainer">
           <p class="text-justify FiltrosPortfolio">
             <span class="FiltroPortfolio FiltroAtivo text-uppercase">Plataforma</span>
-            <span class="FiltroPortfolio text-uppercase">|</span>
+            <span class="FiltroPortfolio text-uppercase"></span>
             <span class="FiltroPortfolio text-uppercase">Objetos digitais</span>
-            <span class="FiltroPortfolio text-uppercase">|</span>
+            <span class="FiltroPortfolio text-uppercase"></span>
             <span class="FiltroPortfolio text-uppercase">Livros digitais</span>
-            <span class="FiltroPortfolio text-uppercase">|</span>
+            <span class="FiltroPortfolio text-uppercase"></span>
             <span class="FiltroPortfolio text-uppercase">Motion design</span>
-            <span class="FiltroPortfolio text-uppercase">|</span>
+            <span class="FiltroPortfolio text-uppercase"></span>
             <span class="FiltroPortfolio text-uppercase">Design gráfico</span>
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
+  <div class="itemWrapper">
     <div class="row">
+      <div class="linhaum">
       <div class="col-xs-12 col-md-6">
         <a href="portfolio_amorim/index.php">
         <div class="ImgPortfolioContainer">
@@ -52,7 +54,13 @@
         </div>
         </a>
       </div>
+    </div>
+  </div>
+</div>
+<div class="itemWrapper">
+    <div class="row">
       <div class="col-xs-12 col-md-6">
+        <a href="">
         <div class="ImgPortfolioContainer">
           <img src="images/portfolio/objetos.png" height="auto" width="100%" alt="" class="ImgPortfolio">
           <div class="FiltroImgPortfolio text-center">
@@ -63,8 +71,10 @@
             </div>
           </div>
         </div>
+      </a>
       </div>
       <div class="col-xs-12 col-md-6">
+        <a href="">
         <div class="ImgPortfolioContainer">
           <img src="images/portfolio/livros.png" height="auto" width="100%" alt="" class="ImgPortfolio">
           <div class="FiltroImgPortfolio text-center">
@@ -75,7 +85,9 @@
             </div>
           </div>
         </div>
+      </a>
       </div>
+    </div>
     </div>
   </div>
 </div>

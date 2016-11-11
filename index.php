@@ -65,10 +65,6 @@
         <!-- Como Fazemos -->
         <?php include_once($local."/comoFazemos.php"); ?>
 
-
-        <!--  O Que Fazemos -->
-        <?php include_once($local."/queFazemos.php"); ?>
-
         <!-- Quem Somos -->
         <?php include_once($local."/quemSomos.php"); ?>
 
@@ -86,10 +82,16 @@
 
         <!-- Rodapé  -->
         <?php include_once($local."/rodape.php"); ?>
-
-
+        
 
     </div>
+
+
+<!-- <div class="modalVideoBg"></div>
+<div class="modalVideo">
+  <iframe src="https://player.vimeo.com/video/190307963?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<div class="modalVideoClose">X</div> -->
 
 
   <script src="http://maps.googleapis.com/maps/api/js"></script>
