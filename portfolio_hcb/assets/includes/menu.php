@@ -16,7 +16,6 @@
 				<div id="OpcoesSuperior">								
 					<div class="Opcao Opc_Atividades"><span>Atividades</span> </div>	
 					<div class="Opcao Opc_Plataforma"><span>Plataforma</span> </div>		
-					<div class="Opcao Opc_Home"><span>Início</span> </div>		
 
 					<div id="bottomHighlight"></div>	
 				</div>
