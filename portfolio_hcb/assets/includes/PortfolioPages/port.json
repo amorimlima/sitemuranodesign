@@ -13,7 +13,8 @@
 			"titulo", 
 			"slide",
 			"texto", 
-			"texto"
+			"texto",
+			"Sair"
 			],
 		"banner":["criancasVoadoras.png","cidadeCapa.png"],
 		"logo":"logo_HCB.png",
