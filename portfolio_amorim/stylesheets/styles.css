@@ -13688,14 +13688,15 @@ html, body {
 }
 /* line 218, ../sass/pages/portfolio.scss */
 #floatPortfolio .btnSair .conteudo {
-  height: 40px;
-  background-color: #EDEDED;
+  height: auto;
+  background-color: transparent;
   /* color:#FFF; */
-  text-align: left;
+  text-align: right;
   /* font-weight: 400; */
   cursor: pointer;
   font-size: 17px;
-  padding: 9px 20px;
+  padding: 0;
+  width: 25%;
 }
 /* line 235, ../sass/pages/portfolio.scss */
 #floatPortfolio .slider {

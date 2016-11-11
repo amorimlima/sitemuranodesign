@@ -9,7 +9,8 @@
 			"texto", 
 			"imagem",
 			"texto",
-			"imagem" 
+			"imagem",
+			"Sair" 
 			],
 		"banner":["capa_amorim.png","fundo_amorim.png"],
 		"logo":"logo_amorim.png",
