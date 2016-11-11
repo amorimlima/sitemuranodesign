@@ -207,6 +207,11 @@
     for(var a=0; a<lng;a++){
 
       if(a < db.titulos.length)
+        if(a == 0){
+          $($("#floatPortfolio .titulo .conteudo").get(0)).parent().prepend('<div id="AncoraPlataforma"></div>')
+        }else{
+          $($("#floatPortfolio .titulo .conteudo").get(1)).parent().prepend('<div id="AncoraAtividades"></div>')
+        }
         $($("#floatPortfolio .titulo .conteudo").get(a)).html(db.titulos[a]);
       
       if(a < db.titulosCinzas.length)
