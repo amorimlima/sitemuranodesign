@@ -259,14 +259,15 @@
     });
 
 
-    $("#floatPortfolio .btnSair").click(function(){
+    $("#floatPortfolio .btnSair").click(function(evt){
+      window.history.back();
 
-      $("#wrapper").css("height","auto");
-      $("#floatPortfolio").css("display","none");
+      // $("#wrapper").css("height","auto");
+      // $("#floatPortfolio").css("display","none");
 
-      $('html, body').animate({
-        scrollTop: ($('#AncoraPortfolio').offset().top - $('#Menu').height() - 25)
-      }, 500);
+      // $('html, body').animate({
+      //   scrollTop: ($('#AncoraPortfolio').offset().top - $('#Menu').height() - 25)
+      // }, 500);
 
     });
    
