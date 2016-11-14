@@ -13,13 +13,9 @@
 			</div>
 
 			<div class="hidden-xs col-sm-9">
-				<div id="OpcoesSuperior">							
-					<div class="Opcao Opc_Contato"><span>Contato</span> 	</div>
-					<div class="Opcao Opc_Clientes"><span>Clientes</span> 	</div>		
-					<div class="Opcao Opc_Somos"><span>Quem Somos</span> </div>		
-					<div class="Opcao Opc_QueFazemos"><span>O Que Fazemos</span> </div>		
-					<div class="Opcao Opc_ComoFazemos"><span>Como Fazemos</span> </div>	
-					<div class="Opcao Opc_Portfolio"><span>Portfolio</span> </div>		
+				<div id="OpcoesSuperior">								
+					<div class="Opcao Opc_Atividades"><span>Atividades</span> </div>	
+					<div class="Opcao Opc_Plataforma"><span>Plataforma</span> </div>		
 
 					<div id="bottomHighlight"></div>	
 				</div>
