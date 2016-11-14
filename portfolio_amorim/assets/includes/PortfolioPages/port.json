@@ -10,7 +10,8 @@
 			"imagem",
 			"texto",
 			"imagem",
-			"Sair" 
+			"Sair",
+			"Rodape" 
 			],
 		"banner":["capa_amorim.png","fundo_amorim.png"],
 		"logo":"logo_amorim.png",
