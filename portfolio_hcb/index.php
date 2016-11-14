@@ -176,6 +176,9 @@
         case "Sair":
           html+= '<?php include_once("assets/includes/PortfolioPages/sair.php"); ?>';
         break;
+        case "Rodape":
+          html+= '<?php include_once("assets/includes/PortfolioPages/rodape.php"); ?>';
+        break;
       }
     }
 
