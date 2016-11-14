@@ -87,11 +87,12 @@
     </div>
 
 
-<!-- <div class="modalVideoBg"></div>
-<div class="modalVideo">
-  <iframe src="https://player.vimeo.com/video/190307963?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="modalVideoBg" style="display:none;"></div>
+<div class="modalVideo" style="display:none;">
+  <iframe id="idVideo" class="frmLivro" src="https://player.vimeo.com/video/86141297?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe  class="frmObjeto" src="https://player.vimeo.com/video/89957118?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="display:none;"></iframe>
 </div>
-<div class="modalVideoClose">X</div> -->
+<div class="modalVideoClose" style="display:none;">X</div>
 
 
   <script src="http://maps.googleapis.com/maps/api/js"></script>

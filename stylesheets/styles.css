@@ -13785,7 +13785,7 @@ a {
   margin-right: -15px;
 }
 
-/*.modalVideo {
+.modalVideo {
   position: absolute;
   padding-bottom: 75%;
   top: 900px;
@@ -13831,27 +13831,28 @@ a {
 }
 
 @media (min-width: 768px) {
-.modalVideoClose {
-  font-size: 20px;
-}
+  .modalVideoClose {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
   .modalVideo iframe {
-  position: absolute;
-  top: 0;
-  left: 15%;
-  background-color: transparent;
-  z-index: 10;
-  height: 62%;
-  width: 70%;
-}
+    position: absolute;
+    top: 0;
+    left: 15%;
+    background-color: transparent;
+    z-index: 10;
+    height: 62%;
+    width: 70%;
+  }
 
-.modalVideoClose {
-  left: 85%;
-  font-size: 20px;
+  .modalVideoClose {
+    left: 85%;
+    font-size: 20px;
+    cursor: pointer;
+  }
 }
-}*/
 
 #clientes {
   background-color: #fff;

@@ -105,6 +105,11 @@ $( document ).ready(function() {
 
 	window.setInterval(update,100);
 
+	modalPortfolio();
+
+	closeModalPortfolio();
+
+	closeModalScreen();
 });
 
 
@@ -125,9 +130,9 @@ function ActScroll(){
 function update(){
 
 	resetMapGoogle();
-
-	if(PageVars.ScrollPosition != $(window).scrollTop()){
 	
+	if(PageVars.ScrollPosition != $(window).scrollTop()){
+		
 
 		ActScroll();
 
@@ -823,8 +828,6 @@ function resetMapGoogle(){
 			selected = "Portfolio";
 		} else if(scrollTop >= $("#AncoraSomos").offset().top){
 			selected = "Somos";
-		} else if(scrollTop >= $("#AncoraQueFazemos").offset().top){
-			selected = "QueFazemos";
 		} else if(scrollTop >= $("#AncoraComoFazemos").offset().top){
 			selected = "ComoFazemos";
 		} else {
@@ -1006,7 +1009,48 @@ function VerificaColisao(obj1, obj2){
         pointsb[i] = {x: parseInt($(this).offset().left), y: parseInt($(this).offset().top)};
     });
     
-
-    console.log(pointsa, pointsb);
     return doPolygonsIntersect(pointsb, pointsa);
 };
+
+function modalPortfolio(){
+	$('.FiltroImgPortfolio').click(function(){
+		if($(this).hasClass('objeto')){
+			$('.frmLivro').hide();
+			$('.frmObjeto').show();
+		}else{
+			$('.frmLivro').show();
+			$('.frmObjeto').hide();
+		}
+		$('.modalVideoBg').show();
+		$('.modalVideo').show();
+		$('.modalVideoClose').show();
+	});
+}
+
+function closeModalPortfolio(){
+	$('.modalVideoClose').click(function(){
+		$('.modalVideoBg').hide();
+		$('.modalVideo').hide();
+		$('.modalVideoClose').hide();
+		stopVideo();
+	});
+}
+
+function closeModalScreen(){
+	$('.modalVideo').click(function(){
+		$('.modalVideoBg').hide();
+		$('.modalVideo').hide();
+		$('.modalVideoClose').hide();
+	});
+	$('.modalVideoBg').click(function(evt){
+		evt.stopPropagation();
+	});
+	stopVideo();
+}
+
+function stopVideo(){
+	var $frame = $('#idVideo');
+	var videoSource = $frame.attr('src');
+	$frame.attr('src', '');
+	$frame.attr('src', videoSource);
+}
