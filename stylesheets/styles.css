@@ -12639,6 +12639,7 @@ a:active {
   }
 }
 
+
 video { 
     position: fixed;
     top: 65px;
@@ -12662,12 +12663,32 @@ video {
   padding-bottom: 40px;
 }
 
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
 #bgvideo {
   background-color: transparent;
   background-position: fixed;
   background-size: cover;
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('images/videogif.gif') center center / cover no-repeat;
+    }
+
+    #bgvideo {
+        display: none;
+    }
 }
 
 h1 {
