@@ -2403,6 +2403,11 @@ pre code {
   margin-left: -15px;
   margin-right: -15px;
 }
+.rowR {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #000;
+}
 /* line 14, ../assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .row:before, .row:after {
   content: " ";
@@ -2420,9 +2425,20 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
+.col-sm-12SP, .col-xs-12SP {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
 
 /* line 27, ../assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+.col-xs-12SP {
   float: left;
 }
 
@@ -2483,6 +2499,10 @@ pre code {
 
 /* line 35, ../assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-12 {
+  width: 100%;
+}
+
+.col-xs-12SP {
   width: 100%;
 }
 
@@ -2687,6 +2707,10 @@ pre code {
     float: left;
   }
 
+  .col-sm-12SP {
+    float:left;
+  }
+
   /* line 35, ../assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-1 {
     width: 8.33333%;
@@ -2744,6 +2768,10 @@ pre code {
 
   /* line 35, ../assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-12 {
+    width: 100%;
+  }
+
+  .col-sm-12SP {
     width: 100%;
   }
 
@@ -13592,7 +13620,7 @@ html, body {
 
 /* line 121, ../sass/pages/portfolio.scss */
 #floatPortfolio {
-  /* width:100%; */
+   width:100%; 
   position: absolute;
   height: auto;
   background-color: white;
@@ -13600,12 +13628,19 @@ html, body {
   left: 0;
   /* display:none; */
   overflow-x: hidden;
-  padding: 0 15px;
+  padding: 0;
+  margin: 0;
 }
 /* line 132, ../sass/pages/portfolio.scss */
 #floatPortfolio .conteudo {
   max-width: 850px;
   margin: 0 auto;
+  background-color: #fff;
+}
+#floatPortfolio .wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
 }
 /* line 137, ../sass/pages/portfolio.scss */
 #floatPortfolio .banner {
@@ -13624,6 +13659,7 @@ html, body {
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 10px;
+  background-color: #FFF;
 }
 /* line 157, ../sass/pages/portfolio.scss */
 #floatPortfolio .logo img {
@@ -13641,6 +13677,12 @@ html, body {
 #floatPortfolio .video video {
   width: 100%;
   height: auto;
+}
+
+#floatPortfolio iframe {
+  width: 100%;
+  height: 50vw;
+  max-height: 510px;
 }
 
 /* line 165, ../sass/pages/portfolio.scss */
@@ -13681,6 +13723,7 @@ html, body {
   height: auto;
   margin: 20px 0;
   font-size: 16px;
+  background-color: #FFF;
 }
 /* line 215, ../sass/pages/portfolio.scss */
 #floatPortfolio .btnSair {
@@ -13690,6 +13733,118 @@ html, body {
 #floatPortfolio .btnSair .conteudo {
   height: auto;
   background-color: transparent;
+  /* color:#FFF; */
+  text-align: center;
+  /* font-weight: 400; */
+  cursor: pointer;
+  font-size: 17px;
+  padding: 0;
+  width: 100%;
+}
+#floatPortfolio #Rodape {
+  width: 100%;
+  background-color: white;
+}
+/* line 8, ../sass/pages/rodape.scss */
+#floatPortfolio #Rodape .textoRodape {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 10px 0;
+}
+/* line 16, ../sass/pages/rodape.scss */
+#floatPortfolio #Rodape .icones {
+  width: 100%;
+  height: auto;
+  text-align: right;
+  font-size: 10px;
+  background-color: #253238;
+  padding-bottom: 10px;
+  padding-right: 13%;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+#floatPortfolio #Rodape .icones .iconesWrapper {
+  width: 100%;
+  height: auto;
+  text-align: right;
+  font-size: 10px;
+  background-color: #000;
+}
+/* line 23, ../sass/pages/rodape.scss */
+#floatPortfolio #Rodape .icones a > span > i {
+  color: #f7f7f5;
+  transition: color 0.5s;
+}
+/* line 30, ../sass/pages/rodape.scss */
+#floatPortfolio #Rodape #ContentLocalizacao {
+  width: 120%;
+  min-height: 126px;
+  height: auto;
+  padding: 1px 0px;
+  position: relative;
+  background-color: #253238;
+  margin-left: -22px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+/* line 39, ../sass/pages/rodape.scss */
+#floatPortfolio #Rodape #ContentLocalizacao .InfoLocalizacao {
+  font-size: 17px;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  color: #78776b;
+  color: #f7f7f5;
+}
+
+/* line 55, ../sass/pages/rodape.scss */
+#floatPortfolio #MapGoogle {
+  width: 120%;
+  height: 250px;
+  padding-bottom: 20px;
+  background-color: #253238;
+  margin-left: -22px;
+  padding: 0;
+}
+
+/* line 62, ../sass/pages/rodape.scss */
+#floatPortfolio .RedesSociaisLocalizacao {
+  bottom: 0;
+  height: auto;
+  text-align: right;
+  width: 110%;
+  color: blue;
+  background-color: #253238;
+  margin-left: -22px;
+  padding-right: 40px;
+}
+
+@media (min-width: 768px) {
+  /* line 73, ../sass/pages/rodape.scss */
+  #floatPortfolio #Rodape {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 87, ../sass/pages/rodape.scss */
+  #floatPortfolio #Rodape .icones a > span > i {
+    color: rgba(247, 247, 245, 0.3);
+    transition: color 0.5s;
+  }
+  /* line 91, ../sass/pages/rodape.scss */
+  #floatPortfolio #Rodape .icones a > span > i:hover {
+    color: #f7f7f5;
+  }
+
+#floatPortfolio .Rodape {
+  margin: 20px 0;
+}
+/* line 218, ../sass/pages/portfolio.scss */
+#floatPortfolio .Rodape .conteudoR {
+  height: auto;
+  background-color: #253238;
   /* color:#FFF; */
   text-align: right;
   /* font-weight: 400; */

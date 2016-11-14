@@ -1,1 +1,1 @@
-<div class="col-xs-push-1 col-xs-10 texto"><div class="conteudo">dsioujdfsuhdsfuhdsfuhidfuihd</div></div>
+<div class="col-xs-12 texto"><div class="conteudo">dsioujdfsuhdsfuhdsfuhidfuihd</div></div>
