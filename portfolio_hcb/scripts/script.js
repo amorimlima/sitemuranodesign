@@ -277,7 +277,8 @@ return false;
 
 
 	$('.Opcao').on('click',function(e){
-	   	var Selecionado;
+	     
+		var Selecionado;
 		var IDParent = $(this).parent().attr('id');
 		var splitClasses = $(this).attr('class').split(" ");
 		var IDMenuEscolhido = splitClasses[1].split("_");
@@ -289,10 +290,14 @@ return false;
 
 
 
+		/*$("#wrapper").css("height","auto");
+    	$("#floatPortfolio").css("display","none");
+*/
+    	//console.log('#AncoraPortfolio');
 
-		$('html, body').animate({
+		/*$('html, body').animate({
 			scrollTop: ($('#Ancora'+IDMenuEscolhido[1]).offset().top - $('#Menu').height() - 25)
-		}, 500);
+		}, 500);*/
 
 	});
 
