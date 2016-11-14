@@ -2420,6 +2420,7 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .col-sm-12SP, .col-xs-12SP {
   position: relative;
   min-height: 1px;
@@ -2427,13 +2428,16 @@ pre code {
   padding-right: 0;
   margin: 0;
 }
+
 /* line 27, ../assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
+
 .col-xs-12SP {
   float: left;
 }
+
 /* line 35, ../assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-xs-1 {
   width: 8.33333%;
@@ -2493,6 +2497,7 @@ pre code {
 .col-xs-12 {
   width: 100%;
 }
+
 .col-xs-12SP {
   width: 100%;
 }
@@ -2697,9 +2702,11 @@ pre code {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
+
   .col-sm-12SP {
     float:left;
   }
+
   /* line 35, ../assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-1 {
     width: 8.33333%;
@@ -2759,9 +2766,11 @@ pre code {
   .col-sm-12 {
     width: 100%;
   }
+
   .col-sm-12SP {
     width: 100%;
   }
+
   /* line 55, ../assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-pull-0 {
     right: auto;
@@ -13607,7 +13616,7 @@ html, body {
 
 /* line 121, ../sass/pages/portfolio.scss */
 #floatPortfolio {
-  width:100%; 
+  /* width:100%; */
   position: absolute;
   height: auto;
   background-color: white;
@@ -13615,8 +13624,7 @@ html, body {
   left: 0;
   /* display:none; */
   overflow-x: hidden;
-  padding: 0;
-  margin: 0;
+  padding: 0 15px;
 }
 /* line 132, ../sass/pages/portfolio.scss */
 #floatPortfolio .conteudo {
@@ -13686,13 +13694,6 @@ html, body {
   margin: 20px 0;
   font-size: 16px;
 }
-/* line 207, ../sass/pages/portfolio.scss */
-#floatPortfolio .texto {
-  height: auto;
-  margin: 20px 0;
-  font-size: 16px;
-  background-color: #FFF;
-}
 /* line 215, ../sass/pages/portfolio.scss */
 #floatPortfolio .btnSair {
   margin: 20px 0;
@@ -13709,6 +13710,7 @@ html, body {
   padding: 0;
   width: 100%;
 }
+
 #floatPortfolio #Rodape {
   width: 100%;
   background-color: white;
@@ -13755,6 +13757,7 @@ html, body {
   margin-left: -22px;
   padding-left: 25px;
   padding-top: 20px;
+  margin-bottom: 0;
 }
 /* line 39, ../sass/pages/rodape.scss */
 #floatPortfolio #Rodape #ContentLocalizacao .InfoLocalizacao {
@@ -13821,6 +13824,8 @@ html, body {
   padding: 0;
   width: 25%;
 }
+}
+
 /* line 235, ../sass/pages/portfolio.scss */
 #floatPortfolio .slider {
   height: auto;
