@@ -13607,7 +13607,7 @@ html, body {
 
 /* line 121, ../sass/pages/portfolio.scss */
 #floatPortfolio {
-   width:100%; 
+  width:100%; 
   position: absolute;
   height: auto;
   background-color: white;
@@ -13824,7 +13824,6 @@ html, body {
 /* line 235, ../sass/pages/portfolio.scss */
 #floatPortfolio .slider {
   height: auto;
-  width: 100%;
   /* max-width: 1024px; */
   margin: 20px 0;
 }
@@ -13835,7 +13834,6 @@ html, body {
 /* line 242, ../sass/pages/portfolio.scss */
 #floatPortfolio .slider .conteudo {
   max-width: 1024px;
-  width: 100%;
   margin: 0 auto;
 }
 /* line 247, ../sass/pages/portfolio.scss */
