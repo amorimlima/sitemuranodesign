@@ -13,7 +13,9 @@
 			"titulo", 
 			"slide",
 			"texto", 
-			"texto"
+			"texto",
+			"Sair",
+			"Rodape"
 			],
 		"banner":["criancasVoadoras.png","cidadeCapa.png"],
 		"logo":"logo_HCB.png",

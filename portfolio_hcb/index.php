@@ -176,6 +176,9 @@
         case "Sair":
           html+= '<?php include_once("assets/includes/PortfolioPages/sair.php"); ?>';
         break;
+        case "Rodape":
+          html+= '<?php include_once("assets/includes/PortfolioPages/rodape.php"); ?>';
+        break;
       }
     }
 
@@ -253,14 +256,15 @@
     });
 
 
-    $("#floatPortfolio .btnSair").click(function(){
+    $("#floatPortfolio .btnSair").click(function(evt){
+      window.history.back();
 
-      $("#wrapper").css("height","auto");
-      $("#floatPortfolio").css("display","none");
+      // $("#wrapper").css("height","auto");
+      // $("#floatPortfolio").css("display","none");
 
-      $('html, body').animate({
-        scrollTop: ($('#AncoraPortfolio').offset().top - $('#Menu').height() - 25)
-      }, 500);
+      // $('html, body').animate({
+      //   scrollTop: ($('#AncoraPortfolio').offset().top - $('#Menu').height() - 25)
+      // }, 500);
 
     });
    
