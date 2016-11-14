@@ -3,6 +3,7 @@
 		"ordem" : [
 			"banner", 
 			"logo", 
+			"titulo",
 			"texto", 
 			"video",
 			"titulo", 
@@ -15,7 +16,7 @@
 			],
 		"banner":["capa_amorim.png","fundo_amorim.png"],
 		"logo":"logo_amorim.png",
-		"titulos" :["Plataforma"],
+		"titulos" :["Apresentação","Plataforma"],
 		"titulosCinzas" :["Plataforma educacional crianças como parceiras"],
 		"textos" : ["Criada sob medida para atender às demandas do projeto pedagógico inovador da EMEF Desembargador Amorim Lima, a plataforma educacional apoia a gestão e organização do processo de aprendizagem e a interação entre professores, pais e alunos. ",
 					"A Plataforma Educacional Amorim Lima foi financiada pela Fundação Telefônica Vivo e o Instituto Natura por meio do projeto Escolas que Inovam, cujo objetivo é apoiar o uso de tecnologia em escolas de São Paulo que possuem projetos pedagógicos inovadores. No entanto, o conselho pedagógico da escola, após analisar os modelos de plataformas existentes, concluiu que nenhuma delas atendia por completo às demandas das práticas inovadoras da instituição e por isso era preciso criar algo a partir do zero. Assim, a Murano Design foi convidada a desenvolver uma plataforma totalmente customizada, que respondesse às necessidades específicas do projeto pedagógico do Amorim Lima. Projeto esse inspirado na experiência da Escola da Ponte em Portugal, onde o ensino é personalizado e os alunos têm autonomia para conduzir seu aprendizado.",

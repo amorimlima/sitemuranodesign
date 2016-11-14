@@ -13787,6 +13787,7 @@ html, body {
   margin-left: -22px;
   padding-left: 25px;
   padding-top: 20px;
+  margin-bottom: 0;
 }
 /* line 39, ../sass/pages/rodape.scss */
 #floatPortfolio #Rodape #ContentLocalizacao .InfoLocalizacao {
@@ -13852,6 +13853,7 @@ html, body {
   font-size: 17px;
   padding: 0;
   width: 25%;
+}
 }
 /* line 235, ../sass/pages/portfolio.scss */
 #floatPortfolio .slider {
