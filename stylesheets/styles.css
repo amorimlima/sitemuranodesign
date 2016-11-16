@@ -12639,6 +12639,7 @@ a:active {
   }
 }
 
+
 video { 
     position: fixed;
     top: 65px;
@@ -12662,12 +12663,36 @@ video {
   padding-bottom: 40px;
 }
 
+.headerMobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
 #bgvideo {
   background-color: transparent;
   background-position: fixed;
   background-size: cover;
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 767px) {
+    .headerMobile {
+        background: url("../images/videogif.gif") center center / cover no-repeat;
+    }
+
+    #bgvideo {
+        display: none;
+    }
+
+    video {
+      display: none;
+    }
 }
 
 h1 {
@@ -13126,7 +13151,7 @@ a {
 /* line 78, ../sass/pages/group.scss */
 #containerMobile #contentGroupSwipe #PersonsMobile #ActualPerson .groupimage, #containerMobile #contentGroupSwipe #PersonsMobile #NextPerson .groupimage, #containerMobile #contentGroupSwipe #PersonsMobile #AnteriorPerson .groupimage, #containerMobile #contentGroupSwipe #PersonsMobile #NonePerson .groupimage {
   width: 125px;
-  height: 125px;
+  height: 124px;
   margin: 0 auto;
   background-image: url("../images/sprite-group_15.png");
   background-position: 1px -125px;
@@ -13291,7 +13316,7 @@ a {
   #containerGrupo .Pessoa {
     width: 125px;
     height: 124px;
-    background-image: url("../images/sprite-group_16_1.png");
+    background-image: url("../images/sprite-group_15.png");
     z-index: 4;
     border-radius: 50%;
     cursor: pointer;
@@ -13856,6 +13881,7 @@ a {
 
 #clientes {
   background-color: #fff;
+  padding-top: 30px;
 }
 
 /* line 8, ../sass/pages/clientesCarrousel.scss */
