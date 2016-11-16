@@ -12663,7 +12663,7 @@ video {
   padding-bottom: 40px;
 }
 
-.fullscreen-bg {
+.headerMobile {
     position: fixed;
     top: 0;
     right: 0;
@@ -12682,12 +12682,16 @@ video {
 }
 
 @media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('images/videogif.gif') center center / cover no-repeat;
+    .headerMobile {
+        background: url("../images/videogif.gif") center center / cover no-repeat;
     }
 
     #bgvideo {
         display: none;
+    }
+
+    video {
+      display: none;
     }
 }
 
@@ -13876,6 +13880,7 @@ a {
 
 #clientes {
   background-color: #fff;
+  padding-top: 30px;
 }
 
 /* line 8, ../sass/pages/clientesCarrousel.scss */
