@@ -295,9 +295,9 @@ return false;
 */
     	//console.log('#AncoraPortfolio');
 
-		/*$('html, body').animate({
+		$('html, body').animate({
 			scrollTop: ($('#Ancora'+IDMenuEscolhido[1]).offset().top - $('#Menu').height() - 25)
-		}, 500);*/
+		}, 500);
 
 	});
 

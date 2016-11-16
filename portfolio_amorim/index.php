@@ -211,7 +211,11 @@
 
 
     for(var a=0; a<lng;a++){
-
+      if(a == 0){
+        $($("#floatPortfolio .titulo .conteudo").get(0)).parent().prepend('<div id="AncoraApresentacao"></div>');
+      }else{
+        $($("#floatPortfolio .titulo .conteudo").get(1)).parent().prepend('<div id="AncoraPlataforma"></div>');
+      }
       if(a < db.titulos.length)
         $($("#floatPortfolio .titulo .conteudo").get(a)).html(db.titulos[a]);
       
