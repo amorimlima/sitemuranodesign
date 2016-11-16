@@ -276,8 +276,7 @@ return false;
 	
 
 
-	$('.Opcao').on('click',function(e){
-	     
+	$('.Opcao').on('click',function(e){	     
 		var Selecionado;
 		var IDParent = $(this).parent().attr('id');
 		var splitClasses = $(this).attr('class').split(" ");
@@ -295,9 +294,9 @@ return false;
 */
     	//console.log('#AncoraPortfolio');
 
-		/*$('html, body').animate({
+		$('html, body').animate({
 			scrollTop: ($('#Ancora'+IDMenuEscolhido[1]).offset().top - $('#Menu').height() - 25)
-		}, 500);*/
+		}, 500);
 
 	});
 

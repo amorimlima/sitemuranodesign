@@ -59,11 +59,22 @@
 </div>
 <div class="itemWrapper">
     <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <a href="">
+      <div class="col-xs-12 col-md-6" style="cursor: pointer;">
         <div class="ImgPortfolioContainer">
           <img src="images/portfolio/objetos.png" height="auto" width="100%" alt="" class="ImgPortfolio">
-          <div class="FiltroImgPortfolio text-center">
+          <div class="FiltroImgPortfolio text-center livro">
+            <div class="FiltroImgInfo">
+              <p class="FiltroImgTitulo text-uppercase">Livros digitais</p>
+              <hr class="FiltroImgSeparador">
+              <p class="FiltroImgTags">Web Design, Projeto Gráfico, Motion Design</p>
+            </div>
+          </div>
+        </div>      
+      </div>
+      <div class="col-xs-12 col-md-6" style="cursor: pointer;">        
+        <div class="ImgPortfolioContainer">
+          <img src="images/portfolio/livros.png" height="auto" width="100%" alt="" class="ImgPortfolio">
+          <div class="FiltroImgPortfolio text-center objeto">
             <div class="FiltroImgInfo">
               <p class="FiltroImgTitulo text-uppercase">Objetos digitais de aprendizagem</p>
               <hr class="FiltroImgSeparador">
@@ -71,21 +82,6 @@
             </div>
           </div>
         </div>
-      </a>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <a href="">
-        <div class="ImgPortfolioContainer">
-          <img src="images/portfolio/livros.png" height="auto" width="100%" alt="" class="ImgPortfolio">
-          <div class="FiltroImgPortfolio text-center">
-            <div class="FiltroImgInfo">
-              <p class="FiltroImgTitulo text-uppercase">Livros digitais</p>
-              <hr class="FiltroImgSeparador">
-              <p class="FiltroImgTags">Web Design, Projeto Gráfico, Motion Design</p>
-            </div>
-          </div>
-        </div>
-      </a>
       </div>
     </div>
     </div>
