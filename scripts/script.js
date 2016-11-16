@@ -1013,7 +1013,7 @@ function VerificaColisao(obj1, obj2){
 };
 
 function modalPortfolio(){
-	$('.FiltroImgPortfolio').click(function(){
+	$('.livro, .objeto').click(function(){
 		if($(this).hasClass('objeto')){
 			$('.frmLivro').hide();
 			$('.frmObjeto').show();
