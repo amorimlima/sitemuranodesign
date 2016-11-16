@@ -59,7 +59,7 @@
 </div>
 <div class="itemWrapper">
     <div class="row">
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6" style="cursor: pointer;">
         <div class="ImgPortfolioContainer">
           <img src="images/portfolio/objetos.png" height="auto" width="100%" alt="" class="ImgPortfolio">
           <div class="FiltroImgPortfolio text-center livro">
@@ -71,7 +71,7 @@
           </div>
         </div>      
       </div>
-      <div class="col-xs-12 col-md-6">        
+      <div class="col-xs-12 col-md-6" style="cursor: pointer;">        
         <div class="ImgPortfolioContainer">
           <img src="images/portfolio/livros.png" height="auto" width="100%" alt="" class="ImgPortfolio">
           <div class="FiltroImgPortfolio text-center objeto">
